@@ -3,16 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light-dark">
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./images/favicon.ico" sizes="any"/>
+    <link rel="icon" href="./images/favicon.svg" sizes="image/svg+xml"/>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/themes.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header" page__section page__header>
+      <a class="header-logo">&lt;/HTML&gt;</a>
+      <h1 class="header__title">Закрывающий тег</h1>
+      <nav class="theme-menu header__theme-menu">
+        <ul class="theme-menu__list">
+          <li class="theme-menu__item">
+            <button type="button" data-theme="dark" class="theme-menu__button">
+              Темно
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button 
+            type="button"
+            data-theme="auto"
+            disabled
+            class="theme-menu__button"
+            >
+            Авто
+          </button>
+          </li>
+          <li class="theme-menu__item">
+            <button type="button" data-theme="light" class="theme-menu__button">
+              Светло
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="card page__section page__card">
+        <h2 class="card-title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="card__image-container">
+          <span class="card__label">&lt;/HTML&gt;</span>
+          <img
+          src="./images/image.png"
+          alt="Изображение,которое характерезует состояние перед стартом обучения"
+          class="card__image"
+          />
+        </div>
+        <div class="card__description">
+          <p>
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p>
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+          <div class="card__controls">
+            <button
+            type="button"
+            class="card__icon-button"
+            aria-labelledby="like-button-01">
+            <svg
+            class="like-icon"
+            width="39"
+            height="36"
+            viewbox="0 0 39 36"
+            fill="none"
+            xmlns="../svg/heart animation hold.svg"
+            aria-hidden="true"></svg>
+            </button>
+            <button
+            type="button"
+            class="button card__like-button"
+            id="like-button-01">
+          <span class="button__text">Like</span>
+          </button>
+          </div>
+        </div>
+      </article>
+      <article class="card page__section page__card"></article>
+      <article class="card page__section page__card"></article>
+      <article class="card page__section page__card"></article>
+      <article class="card page__section page__card"></article>
+      <article class="card page__section page__card"></article>
+      <button
+      type="button"
+      class="button button__type_save"
+      onclick="Window['floppy-dialog'].showModal()"
+      aria-controls="floppy-dialog">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+        <use href="./svg/save.svg#save-icon"></use>
+      </svg>
+      <span class="button__text">Сохранить &nbsp;на память</span>
+    </button>
+    <dialog class="popup" id="floppy-dialog"></dialog>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
