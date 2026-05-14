@@ -1,21 +1,93 @@
-@keyframes left-right{
-    from{
-        translate: calc(-100% 8px) -50%;
-    }
-    to{
-        translate: calc(-100% -4px)-50%;
-    }
+@keyframes heart-pop {
+  0%   { transform: scale(1); }
+  20%  { transform: scale(1.35); }
+  40%  { transform: scale(0.9); }
+  60%  { transform: scale(1.1); }
+  80%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
 }
-@keyframes change-opacity{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+.like-icon.is-liked {
+  animation: heart-pop 0.5s ease;
 }
-@keyframes change-scale {
-    from{
-        transition: scale(1);
-    }
+@keyframes heart-glow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(255, 0, 64, 0.3)); }
+  50%      { filter: drop-shadow(0 0 8px rgba(255, 0, 64, 0.7)); }
+}
+.card__icon-button:hover .like-icon:not(.is-liked) {
+  animation: heart-glow 1.2s ease-in-out infinite;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.3; transform: scale(0.5); }
+}
+.scene__star {
+  animation: twinkle 3s ease-in-out infinite;
+}
+.scene__star:nth-child(2) { animation-delay: 0.6s; }
+.scene__star:nth-child(3) { animation-delay: 1.2s; }
+.scene__star:nth-child(4) { animation-delay: 1.8s; }
+.scene__star:nth-child(5) { animation-delay: 0.3s; }
+.scene__star:nth-child(6) { animation-delay: 2.1s; }
+@keyframes cloud-drift {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+.scene__cloud {
+  animation: cloud-drift 8s ease-in-out infinite;
+}
+.scene__cloud:nth-child(2) {
+  animation-delay: 2s;
+  animation-duration: 10s;
+}
+@keyframes modal-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.modal-overlay.is-visible .modal {
+  animation: modal-in 0.3s ease-out;
+}
+.button__text {
+  transition: opacity 0.2s ease;
+}
+@keyframes save-pulse {
+  0%, 100% { box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2); }
+  50%      { box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.4), 0 0 12px rgba(10, 170, 255, 0.3); }
+}
+.save-memory-button:hover {
+  animation: save-pulse 1.5s ease-in-out infinite;
+}
+@keyframes card-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card {
+  animation: card-slide-up 0.5s ease-out both;
+}
+.card:nth-child(1) { animation-delay: 0.05s; }
+.card:nth-child(2) { animation-delay: 0.10s; }
+.card:nth-child(3) { animation-delay: 0.15s; }
+.card:nth-child(4) { animation-delay: 0.20s; }
+.card:nth-child(5) { animation-delay: 0.25s; }
+.card:nth-child(6) { animation-delay: 0.30s; }
+.card:nth-child(7) { animation-delay: 0.35s; }
+.card:nth-child(8) { animation-delay: 0.40s; }
+@keyframes headlight-flicker {
+  0%, 100% { box-shadow: 0 0 8px 2px rgba(255, 255, 0, 0.4); }
+  50%      { box-shadow: 0 0 14px 4px rgba(255, 255, 0, 0.7); }
+}
+.car__headlight {
+  animation: headlight-flicker 2.5s ease-in-out infinite;
 }
