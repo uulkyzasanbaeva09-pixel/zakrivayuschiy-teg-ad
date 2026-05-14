@@ -1,108 +1,492 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="light-dark">
-    <title>Закрывающий тег</title>
-    <link rel="icon" href="./images/favicon.ico" sizes="any"/>
-    <link rel="icon" href="./images/favicon.svg" sizes="image/svg+xml"/>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
-  </head>
-  <body class="page">
-    <header class="header" page__section page__header>
-      <a class="header-logo">&lt;/HTML&gt;</a>
-      <h1 class="header__title">Закрывающий тег</h1>
-      <nav class="theme-menu header__theme-menu">
-        <ul class="theme-menu__list">
-          <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
-              Темно
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button 
-            type="button"
-            data-theme="auto"
-            disabled
-            class="theme-menu__button"
-            >
-            Авто
-          </button>
-          </li>
-          <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
-              Светло
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <article class="card page__section page__card">
-        <h2 class="card-title">
-          Фритрек и нулевой спринт: Подготовка к работе
-        </h2>
-        <div class="card__image-container">
-          <span class="card__label">&lt;/HTML&gt;</span>
-          <img
-          src="./images/image.png"
-          alt="Изображение,которое характерезует состояние перед стартом обучения"
-          class="card__image"
-          />
-        </div>
-        <div class="card__description">
-          <p>
-            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
-          </p>
-          <p>
-            Место для ваших воспоминаний о начале обучения.
-          </p>
-          <div class="card__controls">
-            <button
-            type="button"
-            class="card__icon-button"
-            aria-labelledby="like-button-01">
-            <svg
-            class="like-icon"
-            width="39"
-            height="36"
-            viewbox="0 0 39 36"
-            fill="none"
-            xmlns="../svg/heart animation hold.svg"
-            aria-hidden="true"></svg>
-            </button>
-            <button
-            type="button"
-            class="button card__like-button"
-            id="like-button-01">
-          <span class="button__text">Like</span>
-          </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Закрывающий тег</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/animations.css">
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-logo">
+      <span class="logo-bracket"><</span><span class="logo-text">/HTML</span><span class="logo-bracket">></span>
+      <p class="logo-subtitle">ЗАКРЫВАЮЩИЙ ТЕГ</p>
+    </div>
+  </header>
+  <main class="cards-container">
+    <article class="card">
+      <div class="card__header">
+        <span class="card__tag">Фритрек и нулевой спринт: Подготовка к работе</span>
+      </div>
+      <div class="card__image scene-1">
+        <div class="scene__bg"></div>
+        <div class="scene__ground"></div>
+        <div class="pixel-car car-orange">
+          <div class="car__body-main">
+            <div class="car__body"></div>
+            <div class="car__cabin"></div>
+            <div class="car__window car__window--front"></div>
+            <div class="car__window car__window--rear"></div>
+            <div class="car__stripe"></div>
+            <div class="car__bumper"></div>
+            <div class="car__headlight"></div>
+            <div class="car__taillight"></div>
           </div>
+          <div class="car__wheel car__wheel--front"></div>
+          <div class="car__wheel car__wheel--rear"></div>
         </div>
-      </article>
-      <article class="card page__section page__card"></article>
-      <article class="card page__section page__card"></article>
-      <article class="card page__section page__card"></article>
-      <article class="card page__section page__card"></article>
-      <article class="card page__section page__card"></article>
-      <button
-      type="button"
-      class="button button__type_save"
-      onclick="Window['floppy-dialog'].showModal()"
-      aria-controls="floppy-dialog">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
-        <use href="./svg/save.svg#save-icon"></use>
+        <div class="scene__pole"></div>
+        <div class="scene__trees">
+          <div class="scene__tree"></div>
+          <div class="scene__tree scene__tree--far"></div>
+        </div>
+        <div class="scene__stars">
+          <span class="scene__star" style="top:15px;left:40px"></span>
+          <span class="scene__star" style="top:30px;left:120px"></span>
+          <span class="scene__star" style="top:10px;left:200px"></span>
+          <span class="scene__star" style="top:25px;left:300px"></span>
+          <span class="scene__star" style="top:40px;left:90px"></span>
+          <span class="scene__star" style="top:8px;left:260px"></span>
+        </div>
+        <div class="scene__clouds">
+          <div class="scene__cloud" style="top:20px;left:100px"></div>
+          <div class="scene__cloud" style="top:35px;left:250px"></div>
+        </div>
+      </div>
+      <div class="card__content">
+        <p class="card__description">
+          Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+        </p>
+        <p class="card__reflection">Место для ваших воспоминаний о начале обучения.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button">
+          <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                      2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+                      C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+                      c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  fill="none" stroke="#000" stroke-width="2"/>
+          </svg>
+        </button>
+        <button class="card__like-button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__header">
+        <span class="card__tag">1 спринт: Я — чистый лист</span>
+      </div>
+      <div class="card__image scene-2">
+        <div class="scene__bg"></div>
+        <div class="scene__ground"></div>
+        <div class="pixel-car car-blue">
+          <div class="car__body-main">
+            <div class="car__body"></div>
+            <div class="car__cabin"></div>
+            <div class="car__windowcar__window--front"></div>
+            <div class="car__window car__window--rear"></div>
+            <div class="car__stripe"></div>
+            <div class="car__bumper"></div>
+            <div class="car__headlight"></div>
+            <div class="car__taillight"></div>
+          </div>
+          <div class="car__wheel car__wheel--front"></div>
+          <div class="car__wheel car__wheel--rear"></div>
+        </div>
+        <div class="scene__pole"></div>
+        <div class="scene__stars">
+          <span class="scene__star" style="top:12px;left:60px"></span>
+          <span class="scene__star" style="top:28px;left:150px"></span>
+          <span class="scene__star" style="top:18px;left:280px"></span>
+          <span class="scene__star" style="top:35px;left:200px"></span>
+        </div>
+      </div>
+      <div class="card__content">
+        <p class="card__description">
+          На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением скрываются более глубокие вопросы: с чего начать? а вдруг будет слишком сложно? что, если я не справлюсь?
+        </p>
+        <p class="card__reflection">Место для ваших воспоминаний о начале первого спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button">
+          <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                      2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+                      C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+                      c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  fill="none" stroke="#000" stroke-width="2"/>
+          </svg>
+        </button>
+        <button class="card__like-button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__header">
+        <span class="card__tag">1 спринт: А если не получится?</span>
+      </div>
+      <div class="card__image scene-3">
+        <div class="scene__bg"></div>
+        <div class="scene__ground"></div>
+        <div class="pixel-car car-green">
+          <div class="car__body-main">
+            <div class="car__body"></div>
+            <div class="car__cabin"></div>
+            <div class="car__window car__window--front"></div>
+            <div class="car__window car__window--rear"></div>
+            <div class="car__stripe"></div>
+            <div class="car__bumper"></div>
+            <div class="car__headlight"></div>
+            <div class="car__taillight"></div>
+          </div>
+          <div class="car__wheel car__wheel--front"></div>
+          <div class="car__wheel car__wheel--rear"></div>
+        </div>
+        <div class="scene__pole"></div>
+        <div class="scene__trees">
+          <div class="scene__tree"></div>
+        </div>
+        <div class="scene__stars">
+          <span class="scene__star" style="top:10px;left:50px"></span>
+          <span class="scene__star" style="top:30px;left:180px"></span>
+          <span class="scene__star" style="top:15px;left:270px"></span>
+          <span class="scene__star" style="top:40px;left:100px"></span>
+          <span class="scene__star" style="top:8px;left:310px"></span>
+        </div>
+      </div>
+      <div class="card__content">
+        <p class="card__description">
+          Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
+        </p>
+        <p class="card__reflection">Место для ваших воспоминаний об окончании первого спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button">
+          <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                      2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+                      C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+                      c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  fill="none" stroke="#000" stroke-width="2"/>
+          </svg>
+        </button>
+        <button class="card__like-button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__header">
+        <span class="card__tag">2 спринт: Погоня за идеалом</span>
+      </div>
+      <div class="card__image scene-4">
+        <div class="scene__bg"></div>
+        <div class="scene__ground"></div>
+        <div class="pixel-car car-red">
+          <div class="car__body-main">
+            <div class="car__body"></div>
+            <div class="car__cabin"></div>
+            <div class="car__window car__window--front"></div>
+            <div class="car__window car__window--rear"></div>
+            <div class="car__stripe"></div>
+            <div class="car__bumper"></div>
+            <div class="car__headlight"></div>
+            <div class="car__taillight"></div>
+          </div>
+          <div class="car__wheel car__wheel--front"></div>
+          <div class="car__wheel car__wheel--rear"></div>
+        </div>
+        <div class="scene__pole"></div>
+        <div class="scene__trees">
+          <div class="scene__tree"></div>
+          <div class="scene__tree scene__tree--far"></div>
+        </div>
+        <div class="scene__stars">
+          <span class="scene__star" style="top:20px;left:70px"></span>
+          <span class="scene__star" style="top:10px;left:220px"></span>
+          <span class="scene__star" style="top:35px;left:140px"></span>
+          <span class="scene__star" style="top:5px;left:300px"></span>
+        </div>
+      </div>
+      <div class="card__content">
+        <p class="card__description">
+          На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.
+        </p>
+        <p class="card__reflection">Место для ваших воспоминаний о начале второго спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button">
+          <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                      2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+                      C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+                      c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  fill="none" stroke="#000" stroke-width="2"/>
+          </svg>
+        </button>
+        <button class="card__like-button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__header">
+        <span class="card__tag">2 спринт: О тех, кто рядом</span>
+      </div>
+      <div class="card__image scene-5">
+        <div class="scene__bg"></div>
+        <div class="scene__ground"></div>
+        <div class="pixel-car car-yellow">
+          <div class="car__body-main">
+            <div class="car__body"></div>
+            <div class="car__cabin"></div>
+            <div class="car__window car__window--front"></div>
+            <div class="car__window car__window--rear"></div>
+            <div class="car__stripe"></div>
+            <div class="car__bumper"></div>
+            <div class="car__headlight"></div>
+            <div class="car__taillight"></div>
+          </div>
+          <div class="car__wheel car__wheel--front"></div>
+          <div class="car__wheel car__wheel--rear"></div>
+        </div>
+        <div class="scene__pole"></div>
+        <div class="scene__trees"><div class="scene__tree"></div>
+        </div>
+        <div class="scene__stars">
+          <span class="scene__star" style="top:14px;left:55px"></span>
+          <span class="scene__star" style="top:25px;left:170px"></span>
+          <span class="scene__star" style="top:8px;left:290px"></span>
+          <span class="scene__star" style="top:38px;left:110px"></span>
+          <span class="scene__star" style="top:22px;left:240px"></span>
+        </div>
+      </div>
+      <div class="card__content">
+        <p class="card__description">
+          Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть единомышленники, не правда ли?
+        </p>
+        <p class="card__reflection">Место для ваших воспоминаний об окончании второго спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button">
+          <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                      2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+                      C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+                      c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  fill="none" stroke="#000" stroke-width="2"/>
+          </svg>
+        </button>
+        <button class="card__like-button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__header">
+        <span class="card__tag">3 спринт: Обходные стратегии</span>
+      </div>
+      <div class="card__image scene-6">
+        <div class="scene__bg"></div>
+        <div class="scene__ground"></div>
+        <div class="pixel-car car-purple">
+          <div class="car__body-main">
+            <div class="car__body"></div>
+            <div class="car__cabin"></div>
+            <div class="car__window car__window--front"></div>
+            <div class="car__window car__window--rear"></div>
+            <div class="car__stripe"></div>
+            <div class="car__bumper"></div>
+            <div class="car__headlight"></div>
+            <div class="car__taillight"></div>
+          </div>
+          <div class="car__wheel car__wheel--front"></div>
+          <div class="car__wheel car__wheel--rear"></div>
+        </div>
+        <div class="scene__pole"></div>
+        <div class="scene__trees">
+          <div class="scene__tree"></div>
+          <div class="scene__tree scene__tree--far"></div>
+        </div>
+        <div class="scene__stars">
+          <span class="scene__star" style="top:18px;left:80px"></span>
+          <span class="scene__star" style="top:5px;left:200px"></span>
+          <span class="scene__star" style="top:32px;left:130px"></span>
+          <span class="scene__star" style="top:12px;left:300px"></span>
+          <span class="scene__star" style="top:28px;left:250px"></span>
+        </div>
+        <div class="scene__clouds">
+          <div class="scene__cloud" style="top:22px;left:120px"></div>
+        </div>
+      </div>
+      <div class="card__content">
+        <p class="card__description">
+          На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.
+        </p>
+        <p class="card__reflection">Место для ваших воспоминаний о начале третьего спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button">
+          <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                      2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+                      C13.09 3.81 14.76 3 16.5 3 19.58 3 225.42 22 8.5
+                      c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  fill="none" stroke="#000" stroke-width="2"/>
+          </svg>
+        </button>
+        <button class="card__like-button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__header">
+        <span class="card__tag">3 спринт: Когда опускаются руки</span>
+      </div>
+      <div class="card__image scene-7">
+        <div class="scene__bg"></div>
+        <div class="scene__ground"></div>
+        <div class="pixel-car car-cyan">
+          <div class="car__body-main">
+            <div class="car__body"></div>
+            <div class="car__cabin"></div>
+            <div class="car__window car__window--front"></div>
+            <div class="car__window car__window--rear"></div>
+            <div class="car__stripe"></div>
+            <div class="car__bumper"></div>
+            <div class="car__headlight"></div>
+            <div class="car__taillight"></div>
+          </div>
+          <div class="car__wheel car__wheel--front"></div>
+          <div class="car__wheel car__wheel--rear"></div>
+        </div>
+        <div class="scene__pole"></div>
+        <div class="scene__trees">
+          <div class="scene__tree"></div>
+          <div class="scene__tree scene__tree--far"></div>
+        </div>
+        <div class="scene__stars">
+          <span class="scene__star" style="top:10px;left:60px"></span>
+          <span class="scene__star" style="top:30px;left:190px"></span>
+          <span class="scene__star" style="top:20px;left:270px"></span>
+          <span class="scene__star" style="top:8px;left:310px"></span>
+        </div>
+        <div class="scene__clouds">
+          <div class="scene__cloud" style="top:15px;left:100px"></div>
+          <div class="scene__cloud" style="top:28px;left:260px"></div>
+        </div>
+      </div>
+      <div class="card__content">
+        <p class="card__description">
+          Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.
+        </p>
+        <p class="card__reflection">Место для ваших воспоминаний об окончании третьего спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button">
+          <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                      2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+                      C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+                      c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  fill="none" stroke="#000" stroke-width="2"/>
+          </svg>
+        </button>
+        <button class="card__like-button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__header">
+        <span class="card__tag">«Сейчас я здесь»</span>
+      </div>
+      <div class="card__image scene-8">
+        <div class="scene__bg"></div>
+        <div class="scene__ground"></div>
+        <div class="pixel-car car-pink">
+          <div class="car__body-main">
+            <div class="car__body"></div>
+            <div class="car__cabin"></div>
+            <div class="car__window car__window--front"></div>
+            <div class="car__window car__window--rear"></div>
+            <div class="car__stripe"></div>
+            <div class="car__bumper"></div>
+            <div class="car__headlight"></div>
+            <div class="car__taillight"></div>
+          </div>
+          <div class="car__wheel car__wheel--front"></div>
+          <div class="car__wheel car__wheel--rear"></div>
+        </div>
+        <div class="scene__pole"></div>
+        <div class="scene__trees">
+          <div class="scene__tree"></div>
+          <div class="scene__tree scene__tree--far"></div>
+        </div>
+        <div class="scene__stars">
+          <span class="scene__star" style="top:15px;left:50px"></span>
+          <span class="scene__star" style="top:8px;left:180px"></span>
+          <span class="scene__star" style="top:28px;left:260px"></span>
+          <span class="scene__star" style="top:12px;left:120px"></span>
+          <span class="scene__star" style="top:35px;left:300px"></span>
+        </div>
+        <div class="scene__clouds">
+          <div class="scene__cloud" style="top:20px;left:200px"></div>
+        </div>
+      </div>
+      <div class="card__content">
+        <p class="card__description">
+          Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.
+        </p>
+        <p class="card__reflection">Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button">
+          <svg class="like-icon" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                      2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09
+                      C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+                      c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  fill="none" stroke="#000" stroke-width="2"/>
+          </svg>
+        </button>
+        <button class="card__like-button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <button class="save-memory-button" id="saveMemoryBtn">
+      <svg class="floppy-icon" width="20" height="20" viewBox="0 0 24 24">
+        <rect x="4" y="2" width="16" height="20" rx="2" fill="none" stroke="#000" stroke-width="2"/>
+        <rect x="7" y="2" width="10" height="8" fill="none" stroke="#000" stroke-width="2"/>
+        <rect x="9" y="14" width="6" height="5" fill="none" stroke="#000" stroke-width="2"/>
       </svg>
-      <span class="button__text">Сохранить &nbsp;на память</span>
+      Сохранить на память
     </button>
-    <dialog class="popup" id="floppy-dialog"></dialog>
-    </main>
-    <script src="./scripts/like.js"></script>
-  </body>
+  </footer>
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal__icon">
+        <svg width="32" height="32" viewBox="0 0 24 24">
+          <rect x="4" y="2" width="16" height="20" rx="2" fill="none" stroke="#000" stroke-width="2"/>
+          <rect x="7" y="2" width="10" height="8" fill="none" stroke="#000" stroke-width="2"/>
+          <rect x="9" y="14" width="6" height="5" fill="none" stroke="#000" stroke-width="2"/>
+        </svg>
+      </div>
+      <p class="modal__text">ВСТАВЬТЕ ДИСКЕТУ, ЧТОБЫ ПРОДОЛЖИТЬ</p>
+      <button class="modal__ok" id="modalOk">OK</button>
+    </div>
+  </div>
+  <script src="./scripts/like.js"></script>
+</body>
 </html>
